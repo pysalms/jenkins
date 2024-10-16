@@ -23,7 +23,7 @@ public class App {
         options.addArguments("--headless");
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://www.facebook.com/login.php");
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1500));
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
         WebElement userId = driver.findElement(By.id("email"));
         WebElement password = driver.findElement(By.id("pass"));
   //     WebElement submitButton = driver.findElement(By.id("loginbutton"));
